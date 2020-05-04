@@ -25,6 +25,12 @@ html {
   @media only screen and (max-width: 68.75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 31.25%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -42,9 +48,12 @@ body {
   align-items: center;
   padding: 0 4rem;
   background-image: url(../img/header-img.png);
-  background-position: center;
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
+      height: 70vh; } }
   .hero-content {
     width: 40%;
     height: 50rem;
@@ -55,6 +64,12 @@ body {
     display: flex;
     align-items: center;
     padding: 0 5rem; }
+    @media only screen and (max-width: 75em) {
+      .hero-content {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .hero-content {
+        width: 80%; } }
     .hero-content-heading {
       font-size: 5rem; }
 
@@ -72,6 +87,12 @@ body {
     background-size: 40%;
     background-repeat: no-repeat;
     padding-top: 10rem; }
+    @media only screen and (max-width: 75em) {
+      .intro-content {
+        width: 50%; } }
+    @media only screen and (max-width: 37.5em) {
+      .intro-content {
+        width: 80%; } }
     .intro-content-heading {
       font-size: 2.5rem;
       text-align: center; }
@@ -81,12 +102,29 @@ body {
     word-spacing: 1rem;
     letter-spacing: 0.3rem;
     font-style: italic; }
+    @media only screen and (max-width: 37.5em) {
+      .intro-sub-heading {
+        font-size: 2.5rem;
+        text-align: center; } }
 
 .main {
   display: flex;
   padding: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      padding: 5rem; } }
   .main-contents {
     flex: 0 0 50%; }
+    @media only screen and (max-width: 43.75em) {
+      .main-contents {
+        flex: 0 0 90%;
+        background-image: url(../img/Stack.png);
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: top right; } }
+    @media only screen and (max-width: 37.5em) {
+      .main-contents {
+        flex: 0 0 100%; } }
     .main-contents:not(:last-child) {
       margin-bottom: 2rem; }
   .main-content-1:not(:last-child), .main-content-2:not(:last-child), .main-content-3:not(:last-child) {
@@ -98,6 +136,10 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
     opacity: 0.2; }
+    @media only screen and (max-width: 43.75em) {
+      .main-image {
+        display: none;
+        visibility: hidden; } }
   .main-content-heading {
     font-size: 2.5rem;
     padding-bottom: 1rem; }
@@ -155,10 +197,9 @@ body {
   padding: 4rem 5rem 0 8rem; }
   .header-heading {
     font-size: 2.5rem; }
-  .header #menu-icon {
-    font-size: 2.5rem;
-    color: #eee;
-    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .header-heading {
+        font-size: 4rem; } }
 
 .footer {
   display: flex;
@@ -172,6 +213,9 @@ body {
 
 .copyright {
   font-size: 1.3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .copyright {
+      font-size: 2rem; } }
 
 footer #social-media-footer a .fa-facebook,
 footer #social-media-footer a .fa-instagram,
@@ -189,3 +233,14 @@ footer #social-media-footer ul {
 footer #social-media-footer ul li {
   font-size: 1.5rem;
   padding: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    footer #social-media-footer ul li {
+      font-size: 2.5rem; } }
+
+#menu-icon {
+  font-size: 2.5rem;
+  color: #eee;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    #menu-icon {
+      font-size: 4rem; } }

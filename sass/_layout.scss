@@ -9,12 +9,10 @@
 
   &-heading {
     font-size: 2.5rem;
-  }
 
-  #menu-icon {
-    font-size: 2.5rem;
-    color: #eee;
-    align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -33,6 +31,10 @@
 
 .copyright {
   font-size: 1.3rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2rem;
+  }
 }
 
 footer #social-media-footer a .fa-facebook,
@@ -53,4 +55,18 @@ footer #social-media-footer ul {
 footer #social-media-footer ul li {
   font-size: 1.5rem;
   padding: 1rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.5rem;
+  }
+}
+
+#menu-icon {
+  font-size: 2.5rem;
+  color: #eee;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
 }

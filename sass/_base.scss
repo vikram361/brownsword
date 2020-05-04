@@ -17,6 +17,7 @@
 $bp-largest: 75em; // 1200px
 $bp-large: 68.75em; // 1100px
 $bp-medium: 56.25em; // 900px
+$bp-medium-2: 43.75em; //700px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
@@ -36,7 +37,15 @@ html {
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 
   @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 37.5%; // 1rem = 6px, 6/16 = 37.5%
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 31.25%; // 1rem = 4px, 4/16 = 31.25%
   }
 }
 

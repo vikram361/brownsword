@@ -26,6 +26,11 @@
     font-size: 2.5rem;
     word-spacing: 1rem;
     letter-spacing: 0.3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 80%;
+      text-align: center;
+    }
   }
 }
 

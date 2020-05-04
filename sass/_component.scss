@@ -102,6 +102,7 @@
 
     @media only screen and (max-width: $bp-small) {
       flex: 0 0 100%;
+      max-width: 100%;
     }
 
     &:not(:last-child) {
@@ -173,6 +174,10 @@
   max-width: 30%;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    max-width: 40%;
+  }
 }
 
 .form {
@@ -182,6 +187,10 @@
   &-input {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+    }
   }
 
   .input {
@@ -202,5 +211,9 @@
     font-size: 1.5rem;
     color: #fff;
     border: 3px solid #fff;
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 40%;
+    }
   }
 }

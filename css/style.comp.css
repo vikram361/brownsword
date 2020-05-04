@@ -124,7 +124,8 @@ body {
         background-position: top right; } }
     @media only screen and (max-width: 37.5em) {
       .main-contents {
-        flex: 0 0 100%; } }
+        flex: 0 0 100%;
+        max-width: 100%; } }
     .main-contents:not(:last-child) {
       margin-bottom: 2rem; }
   .main-content-1:not(:last-child), .main-content-2:not(:last-child), .main-content-3:not(:last-child) {
@@ -172,6 +173,9 @@ body {
   max-width: 30%;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .btn-link {
+      max-width: 40%; } }
 
 .form {
   display: flex;
@@ -179,6 +183,9 @@ body {
   .form-input {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 31.25em) {
+      .form-input {
+        flex-direction: column; } }
   .form .input {
     background: none;
     display: flex;
@@ -195,6 +202,9 @@ body {
     font-size: 1.5rem;
     color: #fff;
     border: 3px solid #fff; }
+    @media only screen and (max-width: 31.25em) {
+      .form .submit-btn {
+        max-width: 40%; } }
 
 .header {
   height: 7vh;
@@ -219,6 +229,10 @@ body {
     font-size: 2.5rem;
     word-spacing: 1rem;
     letter-spacing: 0.3rem; }
+    @media only screen and (max-width: 31.25em) {
+      .footer-heading {
+        max-width: 80%;
+        text-align: center; } }
 
 .copyright {
   font-size: 1.3rem; }

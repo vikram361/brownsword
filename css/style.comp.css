@@ -173,6 +173,9 @@ body {
   max-width: 30%;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-link {
+      font-size: 2rem; } }
   @media only screen and (max-width: 31.25em) {
     .btn-link {
       max-width: 40%; } }
@@ -202,6 +205,9 @@ body {
     font-size: 1.5rem;
     color: #fff;
     border: 3px solid #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .form .submit-btn {
+        font-size: 2rem; } }
     @media only screen and (max-width: 31.25em) {
       .form .submit-btn {
         max-width: 40%; } }

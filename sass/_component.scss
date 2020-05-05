@@ -175,6 +175,10 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2rem;
+  }
+
   @media only screen and (max-width: $bp-smallest) {
     max-width: 40%;
   }
@@ -211,6 +215,10 @@
     font-size: 1.5rem;
     color: #fff;
     border: 3px solid #fff;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
 
     @media only screen and (max-width: $bp-smallest) {
       max-width: 40%;
